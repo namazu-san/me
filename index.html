@@ -43,7 +43,7 @@
         section {
             margin: 20px 0;
         }
-        .job, .education {
+        .section-content {
             background: #e9ecef;
             padding: 15px;
             border-radius: 8px;
@@ -67,72 +67,96 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#about">Chi Sono</a></li>
+            <li><a href="#info">Informazioni Personali</a></li>
+            <li><a href="#profile">Profilo Professionale</a></li>
             <li><a href="#experience">Esperienza</a></li>
-            <li><a href="#skills">Competenze</a></li>
             <li><a href="#education">Formazione</a></li>
+            <li><a href="#skills">Competenze</a></li>
+            <li><a href="#languages">Lingue</a></li>
             <li><a href="#contact">Contatti</a></li>
         </ul>
     </nav>
     <main>
-        <section id="about">
-            <h2>Chi Sono</h2>
-            <p>Mi chiamo Roman Modugno, un professionista con esperienza in automazione dei processi aziendali, gestione di server Linux e sviluppo di software complessi per ecommerce.</p>
+        <section id="info">
+            <h2>Informazioni Personali</h2>
+            <div class="section-content">
+                <p>Nome: <strong>Roman Modugno</strong></p>
+                <p>Indirizzo: Piazza della Noce n.9, 70032 Bitonto (BA)</p>
+                <p>Telefono: 324 150 5499 | Email: <a href="mailto:modugno@yahoo.it">modugno@yahoo.it</a></p>
+                <p>Cittadinanza: Italiana | Data di nascita: 15/06/1993</p>
+            </div>
+        </section>
+
+        <section id="profile">
+            <h2>Profilo Professionale</h2>
+            <div class="section-content">
+                <p>Software Engineer con oltre 5 anni di esperienza nello sviluppo software, automazione dei processi aziendali e gestione server Linux. Esperto in Python, PHP, MySQL e strumenti di sicurezza informatica. Flessibile, autonomo e orientato alla creazione di soluzioni innovative.</p>
+            </div>
         </section>
 
         <section id="experience">
             <h2>Esperienza Professionale</h2>
-            <div class="job">
-                <h3>Software Engineer</h3>
-                <p><strong>VIDEOPROGRAM SRL</strong> | 2023 - Presente</p>
-                <p>Responsabile sviluppo sistemi informatici avanzati, gestione ecommerce e automazione dei processi aziendali in Python e PHP.</p>
+            <div class="section-content">
+                <h3>VIDEOPROGRAM SRL | Molfetta (BA) | 2023 - Presente</h3>
+                <ul>
+                    <li>Assemblaggio macchine OEM e formazione clienti su servizi pubblici e portali di pagamento.</li>
+                    <li>Sviluppo di script in Python per raccolta dati automatizzata e monitoraggio.</li>
+                    <li>Creazione di landing page e sistemi di prenotazione biglietti per eventi nazionali.</li>
+                </ul>
             </div>
-            <div class="job">
-                <h3>Software Engineer</h3>
-                <p><strong>Csc srl Climaservicecar</strong> | 2021 - 2022</p>
-                <p>Gestione server Linux, sviluppo software in Python, amministrazione database MySQL.</p>
+            <div class="section-content">
+                <h3>CSC SRL Climaservicecar | 2021 - 2022</h3>
+                <ul>
+                    <li>Sviluppo software per automazione aziendale con Python (pandas, selenium, bs4).</li>
+                    <li>Creazione e-commerce con PHP, HTML, CSS e JSON. Gestione server Linux.</li>
+                </ul>
             </div>
-            <div class="job">
-                <h3>Software Engineer</h3>
-                <p><strong>E-Parts srls</strong> | 2020 - 2021</p>
-                <p>Automazione processi aziendali, sicurezza informatica con BurpSuite e Sqlmap.</p>
+            <div class="section-content">
+                <h3>E-Parts SRLS | 2020 - 2021</h3>
+                <ul>
+                    <li>Responsabile IT per la sicurezza informatica e automazione aziendale.</li>
+                    <li>Sviluppo software in Python per processi aziendali.</li>
+                </ul>
             </div>
-            <div class="job">
-                <h3>Tecnico Agrario</h3>
-                <p><strong>Studio di consulenza agronomica</strong> | 2015 - 2017</p>
-                <p>Gestione aziendale agraria e supporto a pratiche di finanziamento agevolato.</p>
+        </section>
+
+        <section id="education">
+            <h2>Istruzione e Formazione</h2>
+            <div class="section-content">
+                <p>Laurea in Ingegneria Informatica (in corso) - Università (L8)</p>
+                <p>Qualifica di Esperto in Industrie e Produzioni Agrarie, IPAGr “DE GEMMIS” Terlizzi (BA), 2013</p>
+                <p>Diploma Tecnico Agrario per la Gestione Aziendale, IPAGr “DE GEMMIS” Terlizzi (BA), 2010 - 2015</p>
             </div>
         </section>
 
         <section id="skills">
-            <h2>Competenze</h2>
-            <ul>
-                <li>Programmazione: Python, PHP, HTML, CSS, SQL</li>
-                <li>Automazione e gestione server Linux</li>
-                <li>Sicurezza informatica: BurpSuite, Sqlmap</li>
-                <li>Gestione ecommerce e database MySQL</li>
-            </ul>
+            <h2>Competenze Tecniche</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Linguaggi: Python, PHP, JavaScript, HTML, CSS</li>
+                    <li>Database: MySQL, SQL avanzato</li>
+                    <li>Sicurezza: BurpSuite, SQLmap</li>
+                    <li>Sistemi: Linux (amministrazione server)</li>
+                </ul>
+            </div>
         </section>
 
-        <section id="education">
-            <h2>Formazione</h2>
-            <div class="education">
-                <h3>Ingegneria Informatica (L8)</h3>
-                <p>Attualmente iscritto con ottimi risultati.</p>
-            </div>
-            <div class="education">
-                <h3>Ist. Tecnico Agrario</h3>
-                <p>IPAGr "DE GEMMIS" Terlizzi (BA) | 2010 - 2015</p>
+        <section id="languages">
+            <h2>Lingue</h2>
+            <div class="section-content">
+                <p>Russo: C2 | Italiano: C2 | Inglese: B2 | Ucraino: B2</p>
             </div>
         </section>
 
         <section id="contact">
             <h2>Contatti</h2>
-            <p class="contact">Email: <a href="mailto:modugno@yahoo.it">modugno@yahoo.it</a></p>
-            <p class="contact">Telefono: 3241505499</p>
-            <p class="contact">Indirizzo: Piazza della Noce, n.9, 70032 Bitonto (BA)</p>
+            <div class="section-content">
+                <p>Email: <a href="mailto:modugno@yahoo.it">modugno@yahoo.it</a></p>
+                <p>Telefono: 324 150 5499</p>
+            </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Roman Modugno. Tutti i diritti riservati.</p>
     </footer>

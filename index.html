@@ -4,87 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roman Modugno - CV</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f9;
-                color: #333;
-            }
-            header {
-                background-color: #007bff;
-                color: white;
-                text-align: center;
-                padding: 1em 0;
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            position: relative;
+            background-color: #333;
+        }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #007bff;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .section-content {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .contact {
+            font-size: 1.1em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
             }
             nav ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                width: 100%;
+                top: 60px;
+                left: 0;
                 background-color: #333;
+            }
+            nav ul.active {
+                display: flex;
             }
             nav ul li {
-                margin: 0 10px;
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
             }
             nav ul li a {
-                color: white;
-                text-decoration: none;
-                padding: 10px;
-            }
-            nav ul li a:hover {
-                background-color: #007bff;
-            }
-            main {
-                padding: 20px;
-            }
-            section {
-                margin: 20px 0;
+                font-size: 0.9em;
+                padding: 8px;
             }
             .section-content {
-                background: #e9ecef;
-                padding: 15px;
-                border-radius: 8px;
-                margin: 10px 0;
+                padding: 8px;
             }
-            footer {
-                background-color: #333;
-                color: white;
-                text-align: center;
-                padding: 10px;
-            }
-            .contact {
-                font-size: 1.1em;
-            }
-    
-            /* Layout Responsive */
-            @media (max-width: 768px) {
-                nav ul {
-                    flex-direction: column;
-                }
-                nav ul li {
-                    margin: 5px 0;
-                }
-                .section-content {
-                    padding: 10px;
-                }
-            }
-    
-            @media (max-width: 480px) {
-                header h1 {
-                    font-size: 1.5em;
-                }
-                nav ul li a {
-                    font-size: 0.9em;
-                    padding: 8px;
-                }
-                .section-content {
-                    padding: 8px;
-                }
-            }
+        }
     </style>
 </head>
 <body>
@@ -93,6 +112,7 @@
         <p>Software Engineer | Automazione | Sicurezza Informatica</p>
     </header>
     <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
         <ul>
             <li><a href="#info">Informazioni Personali</a></li>
             <li><a href="#profile">Profilo Professionale</a></li>
@@ -179,7 +199,7 @@
         <section id="contact">
             <h2>Contatti</h2>
             <div class="section-content">
-                <p>Email: <a href="mailto:rmodugno@yahoo.it">rmodugno@yahoo.it</a></p>
+                <p>Email: <a href="mailto:rmodugno@yahoo.it">modugno@yahoo.it</a></p>
                 <p>Telefono: 324 150 5499</p>
             </div>
         </section>
@@ -188,5 +208,12 @@
     <footer>
         <p>&copy; 2024 Roman Modugno. Tutti i diritti riservati.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
